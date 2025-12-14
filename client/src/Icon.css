@@ -1,0 +1,9 @@
+.icon {
+  height: 1em;
+  width: 1em;
+}
+
+.icon:global(.material-symbols-outlined) {
+  color: var(--main-bg-color);
+  font-size: 1em;
+}

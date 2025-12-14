@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:18.1
+    ports:
+      - '127.0.0.1:5234:5432'
+    environment:
+      POSTGRES_USER: loggy
+      POSTGRES_DB: loggy
+      POSTGRES_PASSWORD: loggy

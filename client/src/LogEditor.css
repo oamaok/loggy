@@ -1,0 +1,58 @@
+.logEditor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  gap: 12px;
+}
+
+.logEditor textarea {
+  resize: none;
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border: 1px solid var(--main-fg-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--main-fg-color);
+}
+
+.hidden { display: none }
+
+.imagePreview {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  gap: 8px;
+}
+
+.imagePreview img {
+  height: 100%;
+  border: 1px solid var(--main-fg-color);
+  border-radius: 8px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  gap: 8px;
+}
+
+.actions button {
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--main-fg-color);
+}
+
+.submit {
+  margin-left: auto;
+}

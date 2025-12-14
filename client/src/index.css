@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --main-bg-color: #2f3c4c;
+  --main-bg-color-transparent-50: #2f3c4c7f;
+  --main-fg-color: #FBF3D1;
+}
+
+html, body {
+  color: var(--main-fg-color);
+  background: #2f3c4c;
+}
+
+input[type=text], input[type=email], input[type=password] {
+  padding: 8px;
+  width: 100%;
+  font-size: 18px;
+  border: 1px solid var(--main-fg-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--main-fg-color);
+}
+
+button, input[type=submit], input[type=button] {
+  padding: 8px;
+  width: fit-content;
+  font-size: 18px;
+  border-radius: 8px;
+  background: var(--main-fg-color);
+  color: var(--main-bg-color);
+}

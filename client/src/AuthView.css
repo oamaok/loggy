@@ -1,0 +1,24 @@
+.authView {
+  padding: 1em;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+  label {
+    margin-bottom: 4px;
+  }
+}
+
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
