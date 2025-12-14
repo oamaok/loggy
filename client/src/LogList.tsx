@@ -1,14 +1,11 @@
-import state from './state'
-import * as auth from './auth'
-import * as api from './api'
 import { useEffect } from 'kaiku'
+import state from './state'
+import * as api from './api'
 import LogEntryComponent from './LogEntryComponent'
+import styles from './LogList.css'
+import Navbar from './Navbar'
 
 const LogList = () => {
-  const openNewLog = () => {
-    state.currentView = { type: 'new' }
-  }
-
   useEffect(() => {
     api.getLogEntries().then((entries) => {
       state.logEntries = entries
@@ -16,16 +13,16 @@ const LogList = () => {
   })
 
   return (
-    <div>
-      <button onClick={openNewLog}>add</button>
-      <button onClick={auth.logout}>logout</button>
-
-      <div>
-        {state.logEntries.map((entry) => (
-          <LogEntryComponent key={entry.id} entry={entry} />
-        ))}
+    <>
+      <div class={styles.logList}>
+        <div>
+          {state.logEntries.map((entry) => (
+            <LogEntryComponent key={entry.id} entry={entry} />
+          ))}
+        </div>
       </div>
-    </div>
+      <Navbar />
+    </>
   )
 }
 

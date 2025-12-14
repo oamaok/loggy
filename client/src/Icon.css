@@ -4,6 +4,5 @@
 }
 
 .icon:global(.material-symbols-outlined) {
-  color: var(--main-bg-color);
   font-size: 1em;
 }

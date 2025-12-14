@@ -1,9 +1,10 @@
 .logEntry {
-  padding: 1em;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 8px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #25313f;
   margin-bottom: 16px;
 }
 
