@@ -1,0 +1,6 @@
+preferFrozenLockfile: true
+
+packages:
+  - 'client'
+  - 'common'
+  - 'server'

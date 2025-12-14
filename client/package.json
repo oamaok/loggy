@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "start": "esbuild --watch ./src/index.tsx --bundle --loader:.svg=text --loader:.css=local-css --outdir=build"
+    "start": "esbuild --watch ./src/index.tsx --bundle --loader:.svg=text --loader:.css=local-css --outdir=build",
+    "build": "esbuild --minify ./src/index.tsx --bundle --loader:.svg=text --loader:.css=local-css --outdir=build"
   },
   "keywords": [],
   "author": "Teemu Pääkkönen",
